@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confirmação</title>
+</head>
+
+<body style="background:black; color:#00ff00; text-align:center; font-family:Courier New;">
+
+<div style="border:2px solid #00ff00; padding:40px; width:60%; margin:auto; margin-top:100px; box-shadow:0 0 20px #00ff00;">
+
+<h1>Missão Confirmada</h1>
+
+<p>Dia escolhido: {{ dia }}</p>
+<p>Horário escolhido: {{ horario }}</p>
+
+</div>
+
+</body>
+</html>

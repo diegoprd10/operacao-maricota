@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Decisão Final</title>
+
+    <script>
+        function fugir() {
+            var botao = document.getElementById("nao");
+            
+            if (botao.style.position === "absolute" && botao.style.right === "10px") {
+                botao.style.left = "10px";
+                botao.style.right = "";
+            } else {
+                botao.style.position = "absolute";
+                botao.style.right = "10px";
+                botao.style.left = "";
+            }
+        }
+    </script>
+
+</head>
+
+<body style="background:black; color:#00ff00; text-align:center; font-family:Courier New;">
+
+<div style="border:2px solid #00ff00; padding:40px; width:60%; margin:auto; margin-top:100px; box-shadow:0 0 20px #00ff00; position:relative;">
+
+<h1>Você aceita esta missão?</h1>
+
+<br><br>
+
+<form action="{{ url_for('decisao') }}" method="POST">
+
+    <button type="submit" name="resposta" value="Sim"
+    style="background:black; color:#00ff00; border:1px solid #00ff00; padding:10px 20px;">
+        Sim
+    </button>
+
+    <button type="submit" name="resposta" value="Claro"
+    style="background:black; color:#00ff00; border:1px solid #00ff00; padding:10px 20px;">
+        Claro
+    </button>
+
+</form>
+
+<button id="nao"
+        onmouseover="fugir()"
+        style="background:black; color:#00ff00; border:1px solid #00ff00; padding:10px 20px;">
+Não
+</button>
+
+</div>
+
+</body>
+</html>

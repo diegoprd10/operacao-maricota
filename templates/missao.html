@@ -1,0 +1,59 @@
+<body style="background:black; color:#00ff00; text-align:center; font-family:Courier New;">
+
+<div style="border:2px solid #00ff00; padding:40px; width:60%; margin:auto; margin-top:100px; box-shadow:0 0 20px #00ff00;">
+
+<h2>Missão #1:</h2>
+
+<p>Observar alvos.</p>
+
+<br><br>
+
+<details>
+	<summary>📁 [Alvo 1] </summary> 
+
+    <br>
+
+    <img src="{{ url_for('static', filename='edward.jpg') }}" 
+         style="width:200px; border:1px solid #00ff00; box-shadow:0 0 10px #00ff00;">
+
+<ul> 
+	<li>nome: Edward Anthony Masen Cullen </li> 
+	<li>Idade:17 anos desde 1918 </li> 
+	<li>Caracteristicas: Brilha no sol, é rápido, fez o ator fez o Batman</li> 
+</ul> 
+</details>
+
+<details>
+    <summary>📁 Alvo 2</summary>
+
+    <br>
+
+    <img src="{{ url_for('static', filename='bella.jpg') }}" 
+         style="width:200px; border:1px solid #00ff00; box-shadow:0 0 10px #00ff00;">
+
+<ul> 
+	<li>nome:Isabella Marie Swan </li> 
+	<li>Idade:18 anos </li> 
+	<li>Caracteristicas:Não sei acho ela sem sal </li> 
+</ul> 
+</details>
+
+<details>
+    <summary>📁 Alvo 3</summary>
+
+    <br>
+
+    <img src="{{ url_for('static', filename='jacob.jpg') }}" 
+         style="width:200px; border:1px solid #00ff00; box-shadow:0 0 10px #00ff00;">
+
+<ul> 
+	<li>nome: Jacob Black</li> 
+	<li>Idade:Entre 15 a 17 </li> 
+	<li>Caracteristicas: Ator é gostosão e namorou a Taylor Swift </li> 
+</ul> 
+</details>
+
+<a href="{{ url_for('missao1') }}" 
+   style="background:black; color:#00ff00; border:1px solid #00ff00; padding:10px 20px; text-decoration:none; display:inline-block;">
+Dados para conclusão da Missão
+</a>
