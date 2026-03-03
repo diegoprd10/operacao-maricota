@@ -24,12 +24,10 @@ def confirmacao():
 
     return redirect(url_for("aceita"))
 
-# ✅ Rota da página aceita
 @app.route("/aceita")
 def aceita():
     return render_template("aceita.html")
 
-# ✅ Rota que recebe a decisão dos botões
 @app.route("/decisao", methods=["POST"])
 def decisao():
     resposta = request.form.get("resposta")
@@ -39,10 +37,9 @@ def decisao():
 
     return redirect(url_for("final"))
 
-# ✅ Última tela do projeto
 @app.route("/final")
 def final():
     return render_template("final.html")
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=10000)
